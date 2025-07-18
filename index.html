@@ -6,6 +6,14 @@
   <title>เกม Sudoku 9x9</title>
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    
+  #home-btn {
+    background-color: #ffcc80;    /* ส้มอ่อน */
+    border-color:     #ffb74d;    /* ส้มเข้มขึ้นนิดหน่อยสำหรับขอบ */
+    color:            #ffffff;    /* ตัวอักษรสีขาว */ }
+  #home-btn:hover {
+    background-color: #ffb74d;    /* เวลาชี้เมาส์เป็นส้มเข้มขึ้น */}
+
     * { box-sizing: border-box; font-family: 'Kanit', sans-serif; }
     body {
       margin: 0; padding: 0;
@@ -179,9 +187,17 @@
     <h2>เกม Sudoku 9x9</h2>
     <table id="sudoku-board"></table>
     <div class="button-group">
-      <button id="prev-btn">⬅️ ย้อนกลับ</button>
+      <button id="prev-btn"
+            type="button"
+            onclick="window.location.href='https://kornvenus.github.io/SUDOKU_6x6/';">
+      ⬅️ ย้อนกลับ
+    </button>
       <button id="check-btn">✅ ตรวจสอบคำตอบ</button>
-      <button id="next-btn">ถัดไป ➡️</button>
+      <button id="home-btn"
+            type="button"
+            onclick="window.location.href='https://kornvenus.github.io/Thinko-KIDs/';">
+        🏠 หน้าหลัก
+      </button>
     </div>
     <p id="result"></p>
   </div>
